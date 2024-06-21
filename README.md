@@ -5,8 +5,7 @@ This is a very small cmake test suite, that makes writing tests easy and maintai
 ## Usage
 
 1. Simply take the `CMakeLists.txt` from the base source directory, and put it in your test directory.
-2. Modify the `ignored_files` list at the very top to exclude any directories or files from the tests.
-3. Simply add `add_subdirectory(<test directory>)` to your top level CMake file. 
+2. Simply add `add_subdirectory(<test directory>)` to your top level CMake file. 
    - This will result in the test suite getting configured before continuing to the next instruction in the top level CMake.
    - It is advised to wrap this in an if statement that allows you to disable tests.
    - It is advised to do this after absolutely everything else in your top level CMake file.
